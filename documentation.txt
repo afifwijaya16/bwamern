@@ -1,0 +1,55 @@
+Install react dengan install -g create-react-app secara global
+
+Buat folder mkdir latihan masuk ke file tersebut dengan cd latihan
+
+Buat folder lagi dengan mkdir bwamern(nama folder) masuk dengan bwamern dengan cd bwamern
+
+Instal react npx create-react-app . (titik itu merupakan tanda bahwa kita menginstal react pada folder bwamern)
+
+jika terdapat error
+        "Aborting installation.
+         npm install --save --save-exact --loglevel error react react-dom react-scripts has failed.
+
+         Deleting generated file... package.json
+         Deleting basics/ from C:\Users\Ritik Sinha\Desktop\reactjs
+         Done."
+
+Maka lakukan npm cache clean --force 
+Jika telah berhasil instal kembali npx create-react-app .
+
+Kemudian running Project dengan npm start 
+
+keterangan 
+=> : Didalam 
+Cek dengan teliti pada tiap folder karena ada catatan :)
+
+Buka bwamern ini dengan visual studi code
+Jangan lupa instal extension :
+- ES7 React/Redux/GraphQL/React-Native Snippets
+- Prettier - Code Formatter 
+- Beautify css/sass/scss/less
+
+Pada aplikasi bwamern ini saya menghapus beberapa file pada folder bwamern 
+1.App.css
+2.Index.css
+3.logo.svg
+4.App.test 
+kemudian buka terminal lalu npm install react-router-dom node-sass
+1) Component Button
+    buat folder elements => 
+        Button.js => file index.js, index.test.js, index.scss 
+    buat folder pages => 
+        LandingPage.js
+    buat folder parts => 
+        Header.js
+
+2)Component Part Icon
+    pada folder parts => 
+        + IconText.js
+    Kemudian setting assets pada _variable.scss, style.css,  dan utillities/_text.scss
+
+3)Component Part Header
+    pada folder parts => 
+        + Header.js
+    Pada folder pages => 
+        + LandingPage.js

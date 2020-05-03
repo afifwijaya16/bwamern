@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 
 export default function Button(props) {
+  // dekralasi classname
   const className = [props.className];
   if (props.isPrimary) className.push("btn-primary");
   if (props.isLarge) className.push("btn-lg");
@@ -10,10 +11,12 @@ export default function Button(props) {
   if (props.isBlock) className.push("btn-block");
   if (props.hasShadow) className.push("btn-shadow");
 
+  //test icon on click
   const onClick = () => {
     if (props.onClick) props.onClick();
   };
 
+  //untuk disabled / loading button
   if (props.isDisabled || props.isLoading) {
     if (props.isDisabled) className.push("disabled");
     return (
@@ -29,6 +32,8 @@ export default function Button(props) {
       </span>
     );
   }
+
+  //untuk link component / external
   if (props.type === "link") {
     if (props.isExternal) {
       return (
@@ -56,6 +61,7 @@ export default function Button(props) {
     }
   }
 
+  //render button
   return (
     <button
       className={className.join(" ")}
@@ -67,6 +73,7 @@ export default function Button(props) {
   );
 }
 
+//deklarasi button
 Button.propTypes = {
   type: propTypes.oneOf(["button", "link"]),
   onClick: propTypes.func,
