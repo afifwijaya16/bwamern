@@ -9,9 +9,10 @@ import IconCities from "assets/images/icons/icon-cities.svg";
 import Button from "elements/Button";
 import formatNumber from "utils/formatNumber";
 export default function Hero(props) {
+  ///function scroll bottom in hero
   function showMostPicked() {
     window.scrollTo({
-      top: props.refMostPicked.current.offseTop - 30,
+      top: props.refMostPicked.current.offsetTop - 30,
       behavior: "smooth",
     });
   }
