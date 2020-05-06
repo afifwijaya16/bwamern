@@ -42,6 +42,17 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+@import "container-grid";
+
+//Hero/banner utama
+.image-hero {
+  width: 520px;
+  height: 410px;
+
+  .hero {
+    border-radius: 100px 20px 20px 20px;
+  }
+}
 
 //Untuk icon pada header
 .brand-text-icon {
@@ -49,16 +60,19 @@
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: $primary;
+
   &:hover {
     color: $primary;
     text-decoration: none;
   }
 }
+
 //header
 header {
   border-bottom: 1px solid $gray-200;
   width: 100%;
   position: relative;
+  margin-bottom: 50px;
 
   .navbar {
     height: 80px;
@@ -86,4 +100,13 @@ header {
       }
     }
   }
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+/// card mostpick
+.card {
+  height: 100%;
 }
