@@ -35,7 +35,7 @@ export default function Testimony({ data }) {
               {data.content}
             </h5>
             <span className="text-gray-500">
-              {data.familyName},{data.familyOccupation}
+              {data.familyName}, {data.familyOccupation}
             </span>
             <div>
               <Button

@@ -84,7 +84,6 @@ h6,
   line-height: $display-line-height;
 }
 
-
 //
 // Horizontal rules
 //
@@ -95,7 +94,6 @@ hr {
   border: 0;
   border-top: $hr-border-width solid $hr-border-color;
 }
-
 
 //
 // Emphasis
@@ -112,7 +110,6 @@ mark,
   padding: $mark-padding;
   background-color: $mark-bg;
 }
-
 
 //
 // Lists
@@ -134,7 +131,6 @@ mark,
     margin-right: $list-inline-padding;
   }
 }
-
 
 //
 // Misc

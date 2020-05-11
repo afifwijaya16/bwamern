@@ -26,7 +26,9 @@ export default function Categories({ data }) {
                       <div className="card">
                         {item.isPopular && (
                           <div className="tag">
-                            <span className="font-wight-light">Choise</span>
+                            <span className="font-wight-light">
+                              Popular Choise
+                            </span>
                           </div>
                         )}
                         <figure className="img-wrapper">
